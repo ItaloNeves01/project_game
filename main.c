@@ -1,21 +1,81 @@
 #include "jogo.h"
 #include <stdio.h>
+#include "save_game/save_load.h"
+#include <ncurses.h>
 
-int main(){
+#ifdef _WIN32
+#include <conio.h> //incluir a biblioteca "conio.h" se o ambiente for windows
+#endif
+
+void limparTerminal()
+{
+    printf("\033[2J\033[H");
+}
+
+int main()
+{
+
+    Personagem jogador;
+    int progresso = 0;
+
+    // save game on linux
+    initscr();
+    cbreak();
+    noecho();
+
     inicio();
+
+    limparTerminal();
 
     tela_aceite();
 
-    if (!aceitar_termos()){
+    if (!aceitar_termos())
+    {
         printf("voce recusou os termos\n");
-        //jogo encerrado pois é necessario ter a confirmação de termos.
+        endwin();//
+        // jogo encerrado pois é necessario ter a confirmação de termos.
         return 1;
     }
-    Personagem jogador;
+
+    limparTerminal();
+
     personagem_create(&jogador);
 
     printf("\nBem vindo, %s!! Vamos começar a sua jornada", jogador.name);
 
     exibir_personagem(jogador);
+
+//verificação do atalho para salvamento
+    while (1){
+        int key;
+
+#ifdef _WIN32
+        if (_kbgit()){
+            key = _getch();
+            if(key == -32){ //verificando se crtl foi precionado
+                key = _getch();
+                if (key == 'j' || key == 'J'){ //verificando se J foi precionado
+                    printf("Salvando jogo...\n");
+                    salvar_estado("save_game/save.sav", &jogador, progresso);
+                    printf("Jogo salvo.\n");
+                }
+            }
+        }
+#else
+    key = getch();
+    if (key == -32){
+        key = getch();
+        if (key == 'j' || 'J'){
+            printf("Salvando jogo...\n");
+            salvar_estado("save_game/save.sav", &jogador, progresso);
+            printf("jogo salvo\n");
+        }
+    }
+
+#endif
+    }
+
+        
+
     return 0;
 }

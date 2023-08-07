@@ -3,6 +3,7 @@
 
 #include <stdbool.h>
 
+void limparTerminal();
 
 //definindo a estutura de dados do personagem
  

@@ -11,7 +11,7 @@ void tela_aceite(){
 }
 bool aceitar_termos(){
   char resposta;
-  scanf("%c", &resposta);
+  scanf(" %c", &resposta); 
 
   if (resposta == 's' || resposta == 'S'){
     return true;

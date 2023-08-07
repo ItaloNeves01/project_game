@@ -3,8 +3,6 @@
 #include <string.h>
 #include <unistd.h>
 
-
-
 void resumo()
 {
 
@@ -24,51 +22,12 @@ void resumo()
     printf("#a princesa prometida é uma histŕia fictícia baseada em um livro fictício sobre   #\n");
     printf("#supostos fatos historicos passados numa cidade que não existiu.                  #\n");
     printf("#---------------------------------------------------------------------------------#\n");
-    printf("Jogo Desenvolvido por Italo Neves, todos os direitos reservados\n");
-    printf("digite [1] voltar\n");
-    int optionOne;
-    scanf("%d", &optionOne);
-    if(optionOne == 1){
-        limparTerminal();
-        inicio();
-    }else{
-        limparTerminal();
-        inicio();
-    }
+    printf("Jogo Desenvolvido por Italo Neves, todos os direitos reservados");
 }
 
-void menu_inicial()
-{
-
-    //menu de escolha
-    int opcao;
-    printf("\n[1]Começar \n[2]Resumo \n[3]Sair\n");
-    scanf("%d", &opcao);
-
-
-//case 1 leva para a tela de aceitação de termos
-//case 2 leva para a tela de informaçõs sobre o game
-//case 3 acaba o jogo
-    switch (opcao)
-    {
-    case 1:
-        printf("Iniciando o jogo...\n");
-        tela_aceite();
-        break;
-    case 2:
-        limparTerminal();
-        resumo();
-        break;
-    case 3:
-        printf("Fechando o programa...\n");
-        return;
-    default:
-        printf("opção invalida");
-        break;
-    }
-}
 void inicio()
 {
+    int opcao;
     printf("#####################################################################\n");
     printf("\n");
     printf("|----------------------------------|        __                       \n");
@@ -82,8 +41,26 @@ void inicio()
     printf("\n");
     printf("##############################INICIANDO##############################\n");
 
-    //esperar 1 segundo para abrir
     sleep(1);
-    //exibir a tela inicial
-    menu_inicial();
+
+    printf("\n[1]Começar \n[2]Resumo \n[3]Sair\n");
+    scanf("%d", &opcao);
+
+    switch (opcao)
+    {
+    case 1:
+        printf("Iniciando o jogo...\n");
+        tela_aceite();
+        break;
+    case 2:
+        resumo();
+        
+        break;
+    case 3:
+        printf("Fechando o programa...\n");
+        return;
+    default:
+        printf("opção invalida");
+        break;
+    }
 }
