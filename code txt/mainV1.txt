@@ -1,3 +1,5 @@
+
+
 #include "jogo.h"
 #include <stdio.h>
 #include "save_game/save_load.h"
@@ -7,87 +9,81 @@
 #include <conio.h> //incluir a biblioteca "conio.h" se o ambiente for windows
 #endif
 
-//limpar o terminal
 void limparTerminal()
 {
     printf("\033[2J\033[H");
 }
-//função principal de todo o jogo, aqui são executadas todas as partes que estão divididas nos arquivos
+
 int main()
 {
 
     Personagem jogador;
     int progresso = 0;
 
-    //iniciando
+    // save game on linux
+
     inicio();
 
     limparTerminal();
 
-    //tela de aceitar termos de compromisso
     tela_aceite();
 
-    //se a tela de aceite 
     if (!aceitar_termos())
     {
         printf("voce recusou os termos\n");
-        //endwin();
-        limparTerminal();
-        inicio();
+        endwin(); //
         // jogo encerrado pois é necessario ter a confirmação de termos.
+        return 1;
     }
 
     limparTerminal();
 
     personagem_create(&jogador);
 
-    printf("\nBem vindo, %s!! Vamos começar a sua jornada\n", jogador.name);
+    printf("\nBem vindo, %s!! Vamos começar a sua jornada", jogador.name);
 
-    exibir_personagem(jogador);
-
-    printf("salvando informações...\n");
-    salvar_estado("save_game/save.sav", &jogador, progresso);
+    exibir_personagem(jogador); 
 
     // verificação do atalho para salvamento
-/*
-    int key;
-    bool sair = false;
 
-    while (!sair)
+    while (1)
     {
+
+        initscr();
+        cbreak();
+        noecho();
+        int key;
+
 #ifdef _WIN32
-        if (_kbhit())
+        if (_kbgit())
         {
             key = _getch();
-#else
-        timeout(0); // Define o tempo limite de espera para getch() como zero (modo não bloqueante)
-        key = getch();
-        if (key != ERR)
-        {
-#endif
             if (key == -32)
-            {
-#ifdef _WIN32
+            { // verificando se crtl foi precionado
                 key = _getch();
-#else
-                key = getch();
-#endif
                 if (key == 'j' || key == 'J')
-                {
+                { // verificando se J foi precionado
                     printf("Salvando jogo...\n");
                     salvar_estado("save_game/save.sav", &jogador, progresso);
                     printf("Jogo salvo.\n");
                 }
             }
-            else if (key == 'q' || key == 'Q')
+        }
+#else
+        key = getch();
+        if (key == -32)
+        {
+            key = getch();
+            if (key == 'j' || 'J')
             {
-                sair = true;
+                printf("Salvando jogo...\n");
+                salvar_estado("save_game/save.sav", &jogador, progresso);
+                printf("jogo salvo\n");
             }
         }
-        // Outras operações do jogo aqui, se necessário
-        // Por exemplo, avançar no jogo, exibir informações, etc.
+
+#endif
     }
-    */
 
     return 0;
 }

@@ -1,5 +1,5 @@
 {
     "files.associations": {
-        "jogo.h": "c"
+        "stdbool.h": "c"
     }
 }

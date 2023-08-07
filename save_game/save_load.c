@@ -2,6 +2,8 @@
 #include "../jogo.h"
 #include <stdio.h>
 
+
+//salvar o estado do jogo, como informações sobre o personagem
 void salvar_estado(const char* nome_arquivo, const Personagem* personagem, int progresso){
     FILE* arquivo = fopen(nome_arquivo, "wb"); //open file em binary mode
 
