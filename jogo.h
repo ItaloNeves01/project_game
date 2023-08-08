@@ -20,6 +20,6 @@ bool aceitar_termos();
 void personagem_create(Personagem* personagem);
 void exibir_personagem(Personagem personagem);
 void salvar_estado(const char* nome_arquivo, const Personagem* personagem, int progresso);
-
+void gameOne();
 
 #endif 

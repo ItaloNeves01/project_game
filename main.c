@@ -1,8 +1,9 @@
 #include "jogo.h"
 #include <stdio.h>
 #include "save_game/save_load.h"
+#include "game_fases/fases.h"
 #include <ncurses.h>
-
+#include <unistd.h>
 #ifdef _WIN32
 #include <conio.h> //incluir a biblioteca "conio.h" se o ambiente for windows
 #endif
@@ -40,14 +41,17 @@ int main()
     limparTerminal();
 
     personagem_create(&jogador);
-
+    limparTerminal();
     printf("\nBem vindo, %s!! Vamos começar a sua jornada\n", jogador.name);
 
     exibir_personagem(jogador);
 
     printf("salvando informações...\n");
     salvar_estado("save_game/save.sav", &jogador, progresso);
-
+    sleep(1);
+    limparTerminal();
+    exibir_personagem(jogador);
+    gameOne();
     // verificação do atalho para salvamento
 /*
     int key;
