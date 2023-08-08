@@ -1,20 +1,35 @@
 #include "jogo.h"
+#include <curses.h>
 #include <stdio.h>
-#include "save_game/save_load.h"
 #include <ncurses.h>
+#include <stdlib.h> 
+#include <unistd.h>
 
 #ifdef _WIN32
 #include <conio.h> //incluir a biblioteca "conio.h" se o ambiente for windows
 #endif
+//screm popout windows and linux
+void abrirJanela()
+{
+#ifdef _WIN32
+  system("start cmd.exe /k");
+#else
+    system("xterm -geometry 80x24+100+100 -e ./jogoQuatro &"); //definindo o tamanho da tela 
+#endif /* ifdef _WIN32 */
+}
+
 
 //limpar o terminal
 void limparTerminal()
 {
     printf("\033[2J\033[H");
 }
+
 //função principal de todo o jogo, aqui são executadas todas as partes que estão divididas nos arquivos
 int main()
 {
+    abrirJanela();
+    sleep(1);
 
     Personagem jogador;
     int progresso = 0;
@@ -47,6 +62,8 @@ int main()
 
     printf("salvando informações...\n");
     salvar_estado("save_game/save.sav", &jogador, progresso);
+
+    endwin();
 
     // verificação do atalho para salvamento
 /*

@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
-#include <ncurses.h>
 
 void resumo()
 {
@@ -27,13 +26,10 @@ void resumo()
     printf("digite [1] voltar\n");
     int optionOne;
     scanf("%d", &optionOne);
-    if (optionOne == 1)
-    {
+    if(optionOne == 1){
         limparTerminal();
         inicio();
-    }
-    else
-    {
+    }else{
         limparTerminal();
         inicio();
     }
@@ -42,14 +38,15 @@ void resumo()
 void menu_inicial()
 {
 
-    // menu de escolha
+    //menu de escolha
     int opcao;
     printf("\n[1]Começar \n[2]Resumo \n[3]Sair\n");
     scanf("%d", &opcao);
 
-    // case 1 leva para a tela de aceitação de termos
-    // case 2 leva para a tela de informaçõs sobre o game
-    // case 3 acaba o jogo
+
+//case 1 leva para a tela de aceitação de termos
+//case 2 leva para a tela de informaçõs sobre o game
+//case 3 acaba o jogo
     switch (opcao)
     {
     case 1:
@@ -70,27 +67,21 @@ void menu_inicial()
 }
 void inicio()
 {
-
     printf("#####################################################################\n");
     printf("\n");
-    printf("   ###             ######   ######    ######  ##   ##    ####   #######   #####     ###             ######   ######    #####   ##   ##  #######   # #####  ######  #####      ### *\n");
-    printf("  ## ##             ##  ##   ##  ##     ##    ###  ##   ##  ##   ##   #  ##   ##   ## ##             ##  ##   ##  ##  ### ###  ### ###   ##   #  ## ## ##    ##     ## ##    ## ## *\n");
-    printf(" ##   ##            ##  ##   ##  ##     ##    #### ##  ##        ##      ##       ##   ##            ##  ##   ##  ##  ##   ##  #######   ##         ##       ##     ##  ##  ##   ## \n");
-    printf(" ##   ##            #####    #####      ##    #######  ##        ####     #####   ##   ##            #####    #####   ##   ##  ## # ##   ####       ##       ##     ##  ##  ##   ##  \n");
-    printf(" #######            ##       ## ##      ##    ## ####  ##        ##           ##  #######            ##       ## ##   ##   ##  ##   ##   ##         ##       ##     ##  ##  ####### \n");
-    printf(" ##   ##            ##       ## ##      ##    ##  ###   ##  ##   ##   #  ##   ##  ##   ##            ##       ## ##   ### ###  ##   ##   ##   #     ##       ##     ## ##   ##   ##  \n");
-    printf(" ##   ##           ####     #### ##   ######  ##   ##    ####   #######   #####   ##   ##           ####     #### ##   #####   ### ###  #######    ####    ######  #####    ##   ## \n");
+    printf("|----------------------------------|        __                       \n");
+    printf("|                                  |       |  |                      \n");
+    printf("| A Princesa Prometida             |-------|  |       ______         \n");
+    printf("|                                  |       ---(____/**|_|___(____  | \n");
+    printf("|----------------------------------|         |_______ --------- __>-}\n");
+    printf("                                                /  (_____|_____/   | \n");
+    printf("                                               *         |           \n");
+    printf("                                                        {O}          \n");
     printf("\n");
-    printf("\n");
-    initscr();
-    start_color();
-    init_pair(1, COLOR_GREEN, COLOR_BLACK);
-    printw("##############################INICIANDO##############################\n");
-    refresh();
-    // esperar 1 segundo para abrir
+    printf("##############################INICIANDO##############################\n");
+
+    //esperar 1 segundo para abrir
     sleep(1);
-    clear();
-    // exibir a tela inicial
+    //exibir a tela inicial
     menu_inicial();
-    endwin();
 }

@@ -21,8 +21,8 @@ void personagem_create(Personagem *personagem)
     }
     if(newAltura < 0 || newAltura > 251){
         printf("altura incorreta..\n");
-        personagem_create(personagem);
         limparTerminal();
+        personagem_create(personagem);
     }
 
 
