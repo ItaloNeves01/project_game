@@ -1,0 +1,176 @@
+fase 1
+Voce abre os olhos, com os primeiros raios de sol do dia, olha para os lados e ver que esta cercado de animais, e fedendo, tenta se levantar mas suas
+pernas se recusam a funcionar, então voce continua deitado, cansado.
+Garoto da Fazenda, voce ainda esta deitado? perguntou Buttercup
+Sim, sim senhora, sabe me dizer o que aconteceu ontem?
+Eu vi voce trabalhando até tarde, e depois sumiu, deve ter dormido aqui no celeiro, junto desses animais, agora me ajude a pegar leite
+Como Quiser, respondeu Wesley
+
+Buttercup sempre mandava Wesley fazer tudo, e ele sempre respondia Como Quiser.
+
+
+
+fase 2
+
+Com o anuncio do casamento Buttercup exausta e infeliz, pegou seu cavalo e saiu para cavalgar em direção ao bosque, onde, foi supreendida por um gigante e um espanhou
+acabou sendo levada pelos dois, rapitada, todo o reino ficou em desespero, pois embora infeliz, ela era amada e querida
+
+a noticia se espalhou rapidamente, até chegar nos ouvidos do jovem Wesley, a quem Buttercup achava esta morto
+
+Então, não resta opção alem de entrar no barco e ir em direção ao resgate da sua amada:
+FICAR NO NAVIO    OR    ENTRAR NO BARCO
+
+FICAR NO NAVIO
+    jogo acaba, Buttercup morre na mão dos vilões e Wesley vive em agonia até o fim como pirata Robert
+
+ENTRAR NO BARCO
+
+    Navegando pelas águas torrenciais até chegar em Florin, adentrando ao canal das enguias gigantes, avista a embarcação dos captores de Buttercup:
+    PERSEGUIR OR PULAR DO BARCO E SE ESCONDER
+
+    PERSEGUIR
+        Voce se ve agora em uma perseguição contra o espanhou o gigante e o italiano Vite
+        o vento esta ao seu favor e voce desliza pelas águas do canal em direção ao desfiladeiro de NOME DO DESFILADEIRO
+        equanto isso, os captores já estão subindo uma enorme coda que leva ao topo do desfiladeiro
+        puxados pelo gigante Fenri, sobem com uma velocidade gigantesca
+
+        o vento favorece ainda mais e voce chega ao desfiladeiro tambem
+        SUBIR NA CORDA 
+            Voce agarra a corda e sobe com toda a sua força, é uma longa subida e seus braços doem
+            enquanto isso, os 3 raptores já estão no topo do desfiladeiro 'CORTE A CORDA EXCLAMA VITE'
+            O espanhou desembanha sua espada e começa a cortar a corda rapidamente, até se partir
+            CAIR
+                MORRER
+            SE SEGURAR EM UMA PEDRA
+                Voce ainda esta ai? grita o espanhou
+                voce se encontra agora agarrado comm toda a sua força em alguns pedaços de rocha
+
+                sou mais dificil de matar do que voce pensa, voce EXCLAMA
+                isso é o que iremos ver quando chegar aqui, quer que eu jogue um pedaço de corda??
+                
+                e se voce soltar ela quando eu estiver subindo?
+                não isso seria uma desonrra, pode SUBIR
+                como eu saberei que não vai me matar?
+                terá que acreditar em minha palavra, mascarado, eu que não deveria confiar em voce, não se confiar em alguem mascarado!!
+                é um bom argumento mas não convicente
+                o espanhou brande 'eu juro pela alma do meu pai que voce chegarar ao topo desse desfiladeiro vivo'
+                isso é o suficiente para mim, jogue a corda
+
+
+                agora voce esta no topo do desfiladeiro tambem
+                Posso descansar um pouco? a subida foi grande
+
+                fique a vontade respondeu o espanhou? alias, me chamo Enigo
+
+                //historia do Enigo
+
+                
+                Voce se levanta se prepara para o duelo
+                Enigo puxa sua espada de duelo
+
+                menu Itens que voce tem
+
+                voce puxa e começam a duelar
+                
+                int bater = [1];
+
+                for ( i = 0; i < bater; i++){
+                    printw("bater");
+                }
+
+                voce é muito bom mascarado, melhor do que eu pensava, a anos não tinha um desafio assim, mas eu sei uma coisa que voce não sabe
+                - e o que é?
+                eu não sou canhoto!!
+                enigo troca a espada de mão rapidamente, e seus movimentos começam a ficar mais letais e perigosos
+                voce se esquiva, pula e chuta, e não ve outra solução
+                enigo, eu tambem tenho algo a revelar!! 
+                Diga mascarado.
+                Eu não sou canhoto tambem!
+                as espadas brandem e duelo volta a se equilibrar
+                
+                int bater = [1];
+
+                for ( i = 0; i < bater; i++){
+                    printw("bater");
+                }
+
+                enigo da no chão, atacado pelo punhau da espada, em um ato de honra se ajoelha e pede uma morte rapida e indolor
+                matar
+                    enigo morre, dando o seu ultimo suspiro imagindnado a sua vingança, que não será mais completada
+                
+                bater com a espada e fazer ele desmaiar
+                    voce ainda vai viver bastante para encontrar sua vingança amigo!
+
+                Wesley continua sua jornada incesante atras de Buttercup
+                correndo pelos vales e seguindo os rastros do gigante Vite
+
+                Vite o avista, Não, ele passou ele passou pelo enigo, agora voce fica e detem ele
+                eu, por que eu? exclama o gigante
+                por que voce tem os musculos e eu tenho o cerebro e agora precisamos de musculos
+                não gosto quando voce me trata commo um burro, eu tambem tenho inteligencia, exclama o gigante
+                a inteligencia de uma porta diz Vite
+
+                agora vá se esconda e mate o mascarado
+
+                voce chaga em um conjuto de rochas e se pergunta onde o mascarado esta
+
+                pera 1 2 3 4 5
+
+                rando randit 1 a 6
+
+                O gigante pula na sua frente
+
+                PUXAR ESPADA 
+                    sua espada parece um palito de dente para o gigante ele começa a rir e a toma
+                    desesperado
+                    voce pula em cima dele, precisa segurar com força
+                    for segurar
+                    SEGURAR 
+                        voce se segura com força e tenta fazer o gigante bater a cabeça na rocha;
+
+                        ele tenta tirar voce de cima e fica desesperado
+
+                        se debate mais ainda
+
+                        acaba batendo a cabeça e desmaiando 
+
+                        voce se enontra muito cansado,  
+
+
+                CORRER
+                    voce tenta correr mas logo é alcançado pelo gigante que acaba te matando esmagado
+
+
+
+
+
+
+
+
+
+
+
+envenado random
+
+
+
+
+
+
+
+fase 3
+
+
+
+
+
+
+
+
+fase 4 FINAL
+
+
+
+caso enigo esteja morto
+se pelo menos enigo estivesse aqui para nos ajudar
+

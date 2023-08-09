@@ -1,0 +1,31 @@
+;; -*- mode: emacs-lisp; lexical-binding:t; coding: utf-8-emacs; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Wed Aug  9 15:47:13 2023
+;; Desktop file format version 208
+;; Emacs version 28.2
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (25811 57137 173962 173000) (desktop . "208") "neves@italo-550xda" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font . "-ADBO-Source Code Pro-normal-normal-normal-*-13-*-*-*-m-0-iso10646-1") (font-parameter . "Source Code Pro 10") (border-width . 0) (internal-border-width . 0) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars . right) (horizontal-scroll-bars) (foreground-color . "gray80") (background-color . "#181a26") (mouse-color . "OrangeRed") (border-color . "gold") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground . "white") (scroll-bar-background . "gray20") (menu-bar-lines . 1) (tab-bar-lines . 0) (tool-bar-lines . 1) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 16) (scroll-bar-height . 16) (alpha) (no-focus-on-map) (no-accept-focus) (fullscreen . maximized) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "green") (sticky) (environment) (last-focus-update . t) (frameset--id . "0328-691F-DD33-1492") (frameset--mini t . t) (height . 55) (width . 236) (modeline . t) (unsplittable) (left . 0) (top . 0) (icon-name) (display . ":0") (explicit-name)) ((min-height . 8) (min-width . 10) (min-height-ignore . 6) (min-width-ignore . 6) (min-height-safe . 2) (min-width-safe . 2) (min-pixel-height . 136) (min-pixel-width . 80) (min-pixel-height-ignore . 102) (min-pixel-width-ignore . 48) (min-pixel-height-safe . 34) (min-pixel-width-safe . 16)) vc (pixel-width . 1920) (pixel-height . 918) (total-width . 240) (total-height . 54) (normal-height . 1.0) (normal-width . 1.0) (combination-limit . t) (leaf (pixel-width . 1920) (pixel-height . 782) (total-width . 240) (total-height . 46) (normal-height . 0.8518518518518519) (normal-width . 1.0) (buffer "gameHistoy.txt" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 7689) (start . 7438)) (prev-buffers ("gameHistoy.txt" 5382 6878) ("*scratch*" 1 146))) (leaf (last . t) (pixel-width . 1920) (pixel-height . 136) (total-width . 240) (total-height . 8) (normal-height . 0.14814814814814814) (normal-width . 1.0) (buffer "*Backtrace*" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 31) (start . 1)))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/Área de trabalho/project_game/textGame/" "~/Área de trabalho/project_game/textGame/gameHistoy.txt"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/neves/Área de trabalho/project_game/textGame/gameHistoy.txt"
+  "gameHistoy.txt"
+  'text-mode
+  nil
+  7689
+  '(7079 nil)
+  nil
+  nil
+  '((buffer-display-time 25811 57133 634712 202000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (6919 6919 6919 7205 6919 7966 6974 6974 6974))))
+
